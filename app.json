@@ -1,0 +1,8 @@
+{
+  "name": "rachelle-dev",
+  "description": "Developement for rachelle - A platform where people buy and sell thier university books online",
+  "keywords": ["Node.js", "HTML5", "Css", "expressJs""AngularJs", "Gulp", "AngularMaterial", "Bootstrap"],
+  "repository": "https://github.com/jesseokeya/rachelle-dev",
+  "logo": "/app/img/favicon.ico",
+  "image": "/app/img/favicon.ico",
+}

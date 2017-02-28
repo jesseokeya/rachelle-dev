@@ -2,19 +2,21 @@
   "name": "rachelle-dev",
   "version": "1.0.0",
   "description": "Developement for rachelle - A platform where people buy and sell thier university books online",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -p 8080"
+    "start": "nodemon server.js"
   },
   "keywords": [
     "AngularJs",
     "Gulp",
-    "AngularMaterial"
+    "AngularMaterial",
+    "Bootstrap"
   ],
   "author": "Jesse Okeya",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.14.1",
     "lite-server": "^2.2.2"
   }
 }
