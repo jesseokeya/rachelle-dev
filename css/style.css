@@ -1,0 +1,27 @@
+body{
+  margin-left: 5px;
+}
+
+md-toolbar .md-toolbar-tools {
+    background-color: #1B2631;
+    color: white;
+}
+
+.md-fab {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.sitename a {
+    font-family: fantasy;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contactcard{
+  background-color: #F8F9F9;
+}
+
+.card{
+  text-align: center;
+}

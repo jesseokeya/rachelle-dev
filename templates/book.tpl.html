@@ -1,0 +1,87 @@
+<!--<div layout="row" layout-wrap class="cardlayout">
+    <md-card flex-xs="90" flex="30" ng-repeat="book in info.articles | filter: sort">
+        <img ng-src="{{book.urlToImage}}" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{ book.title }}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                {{ book.description }}
+            </p>
+        </md-card-content>
+        <md-button ng-click="contactControl" class="md-primary">
+            <i class="fa fa-address-book " aria-hidden="true"></i>
+             {{ contact.message }}
+        </md-button>
+
+        <md-card ng-show="{{ !contact.view }}" class="contactcard">
+            <md-card-content>
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.name }}</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.email }}</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.phonenumber }}</a>
+                </div>
+            </md-card-content>
+        </md-card>
+    </md-card>
+</div>-->
+
+<div layout="row" layout-wrap class="cardlayout">
+    <md-card flex-xs="90" flex="30" ng-repeat="book in info | filter: sort">
+        <img ng-src="{{book.bookInfo.img}}" class="md-card-image" alt="bookImage">
+        <md-card-title>
+            <md-card-title-text>
+                <div class="well well-sm">
+                    <span class="md-headline">
+                      {{ book.bookInfo.name }}
+                    </span>
+                </div>
+                <div class="well well-sm">
+                    <p>
+                        <h4> by: {{ book.bookInfo.author }} </h4>
+                    </p>
+                </div>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <div class="well well-sm">
+                {{ book.bookInfo.description }}
+            </div>
+            <div class="well well-sm">
+                School: {{ book.userInfo.school }}
+            </div>
+            <div class="well well-sm">
+                Category: {{ book.bookInfo.category }}
+            </div>
+            <div class="well well-sm">
+                Posted: {{ book.bookInfo.datePosted | date}}
+            </div>
+        </md-card-content>
+        <md-button ng-show="!contactView" ng-click="contactView = true" class="md-primary">
+            <i class="fa fa-address-book " aria-hidden="true"></i>
+            Show Contact
+        </md-button>
+        <md-button ng-show="contactView" ng-click="contactView = false" class="md-primary">
+            <i class="fa fa-address-book " aria-hidden="true"></i>
+            Hide Contact
+        </md-button>
+
+        <md-card  ng-show="contactView" class="contactcard">
+            <md-card-content>
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
+                      {{ book.userInfo.name }}
+                    </a>
+                    <a class="list-group-item" href="mailto: {{ book.userInfo.email }}"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;
+                       {{ book.userInfo.email }}
+                    </a>
+                    <a class="list-group-item" href="#"><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp;
+                      {{ book.userInfo.phone }}
+                    </a>
+                </div>
+            </md-card-content>
+        </md-card>
+    </md-card>
+</div>

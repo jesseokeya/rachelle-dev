@@ -1,0 +1,49 @@
+<div class="modal-header">
+    <h3 class="modal-title">
+      <i class="fa fa-upload" aria-hidden="true"></i>
+      <strong> Upload </strong>
+    </h3>
+</div>
+<div class="modal-body">
+    <form enctype="multipart/form-data">
+        <!-- COMPONENT START -->
+        <div class="form-group">
+
+        </div>
+        <!-- COMPONENT END -->
+        <div class="form-group">
+            <label for="title"></label>
+            <input type="text" placeholder="Book Title" class="form-control" id="title">
+
+            <label for="sel1"></label>
+            <select class="form-control" id="sel1">
+              <option>Engeneering</option>
+              <option>Art</option>
+              <option>Buisness</option>
+              <option>Sciences</option>
+            </select>
+
+            <label for="email"></label>
+            <input type="text" placeholder="Email" class="form-control" id="email">
+
+            <label for="number"></label>
+            <input type="text" placeholder="PhoneNumber ( Optional )" class="form-control" id="number">
+
+            <label for="description"></label>
+            <textarea placeholder="Book Description" class="form-control" rows="5" id="description"></textarea>
+
+            <label for="uploadButton">
+              <h5 style="color: #566573 ">
+                Upload Book Images:
+              </h5>
+            </label>
+            <br/>
+
+            <input type="file" name="img" class="btn btn-info" value="Submit" multiple>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="userSignup()">Upload</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
