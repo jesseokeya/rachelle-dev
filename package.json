@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server"
+    "start": "nodemon server.js"
   },
   "keywords": [
     "AngularJs",
@@ -17,7 +17,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.1",
-    "http-server": "^0.9.0",
-    "lite-server": "^2.2.2"
+    "gzippo": "^0.2.0"
   }
 }
