@@ -118,13 +118,4 @@ app.controller('mainController', ['$scope', 'books', '$modal', '$mdToast', funct
     (function() {
         $scope.showSimpleToast(' Welcome To Rachelle ');
     })();
-
-    (function selectedDropdown() {
-        $("dropdownList li").click(function() {
-            alert($(this).html());
-        });
-    })();
-
-
-
 }]);
