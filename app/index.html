@@ -12,29 +12,33 @@
 </head>
 
 <body ng-app="rachelleApp" ng-cloak>
-    <div layout="column" layout-fill ng-controller="mainController">
-        <md-toolbar>
-            <div class="md-toolbar-tools">
+    <div class="container-fluid">
+        <div class="row">
+            <div layout="column" layout-fill ng-controller="mainController">
+                <md-toolbar>
+                    <div class="md-toolbar-tools">
 
-                <h2 class="sitename" md-truncate flex>
-                      <a href="/#/">
-                        <img src="/img/favicon.png" alt="rachelle_logo">
-                        <srong> Rachelle </strong>
-                      </a>
-                </h2>
-                <md-button ng-click="showLoginModal()" class="md-raised md-primary" ng-init="userForm = 'login' ">
-                    Login
-                </md-button>
+                        <h2 class="sitename" md-truncate flex>
+                            <a href="/#/">
+                              <img src="/img/favicon.png" alt="rachelle_logo">
+                              <srong> Rachelle </strong>
+                            </a>
+                      </h2>
+                        <md-button ng-click="showLoginModal()" class="md-raised md-primary" ng-init="userForm = 'login' ">
+                            Login
+                        </md-button>
 
-                <md-button ng-click="showSignUpModal()" class="md-raised ">
-                    Sign up
-                </md-button>
+                        <md-button ng-click="showSignUpModal()" class="md-raised ">
+                            Sign up
+                        </md-button>
+                    </div>
+                </md-toolbar>
+                <!--<md-input-container ng-show="searchbar">
+                  <input type="text" placeholder="Book Search" ng-model="message">
+              </md-input-container>-->
+                <div ng-view></div>
             </div>
-        </md-toolbar>
-        <!--<md-input-container ng-show="searchbar">
-            <input type="text" placeholder="Book Search" ng-model="message">
-        </md-input-container>-->
-        <div ng-view></div>
+        </div>
     </div>
 
     <!-- Angular Material requires Angular.js Libraries -->
