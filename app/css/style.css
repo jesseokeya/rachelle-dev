@@ -1,3 +1,7 @@
+body{
+  background-color: #E5E7E9;
+}
+
 md-toolbar .md-toolbar-tools {
     background-color: #1B2631;
     color: white;
@@ -11,9 +15,12 @@ md-toolbar .md-toolbar-tools {
     text-align: center;
     margin-top: 16px;
 }
+.searchButton{
+  color: #154360;
+}
 
 .sitename a {
-    font-family: fantasy;
+    font-family: inherit;
     color: #FFFFFF;
     text-decoration: none;
 }
