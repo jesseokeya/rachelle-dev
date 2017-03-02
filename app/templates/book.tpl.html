@@ -71,13 +71,14 @@
         <md-card  ng-show="contactView" class="contactcard">
             <md-card-content>
                 <div class="list-group">
-                    <a class="list-group-item" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
+                    <a class="list-group-item" href="/#/"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;
                       {{ book.userInfo.name }}
                     </a>
                     <a class="list-group-item" href="mailto: {{ book.userInfo.email }}"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;
                        {{ book.userInfo.email }}
                     </a>
-                    <a class="list-group-item" href="#"><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp;
+                    <a class="list-group-item"
+                    href="tel:{{ book.userInfo.phone }}"><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp;
                       {{ book.userInfo.phone }}
                     </a>
                 </div>
