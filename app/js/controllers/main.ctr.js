@@ -3,12 +3,12 @@ app.controller('mainController', ['$scope', 'books', '$modal', '$mdToast', funct
     $scope.search = 'Hide';
 
     $scope.booksCategories = [
-      'All Books',
-      'Engineering Books',
-      'Science Books',
-      'Art Books',
-      'Buisness Books'
-     ];
+        'All Books',
+        'Engineering Books',
+        'Science Books',
+        'Art Books',
+        'Buisness Books'
+    ];
 
 
     books.success(function(data) {
@@ -118,4 +118,13 @@ app.controller('mainController', ['$scope', 'books', '$modal', '$mdToast', funct
     (function() {
         $scope.showSimpleToast(' Welcome To Rachelle ');
     })();
+
+    (function selectedDropdown() {
+        $("dropdownList li").click(function() {
+            alert($(this).html());
+        });
+    })();
+
+
+
 }]);
