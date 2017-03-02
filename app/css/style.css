@@ -44,4 +44,5 @@ md-toolbar .md-toolbar-tools {
 .cardlayout{
   text-align: justify;
   margin-left: 20px;
+  overflow-y: scroll;
 }
