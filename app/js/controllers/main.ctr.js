@@ -2,6 +2,7 @@ app.controller('mainController', ['$scope', 'books', '$modal', '$mdToast', funct
     $scope.searchbar = true;
     $scope.search = 'Hide';
 
+
     $scope.booksCategories = [
         'All Books',
         'Engineering Books',
@@ -9,7 +10,6 @@ app.controller('mainController', ['$scope', 'books', '$modal', '$mdToast', funct
         'Art Books',
         'Buisness Books'
     ];
-
 
     books.success(function(data) {
         $scope.rachelleBooks = data;
@@ -115,7 +115,4 @@ app.controller('mainController', ['$scope', 'books', '$modal', '$mdToast', funct
         });
     };
     /* ------------------------------------------------------ */
-    (function() {
-        $scope.showSimpleToast(' Welcome To Rachelle ');
-    })();
 }]);
